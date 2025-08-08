@@ -32,7 +32,7 @@ function Home({
 
   return (
     <Layout
-      title={`Temperature details for ${userCityDetails.city}, ${userCityDetails.country}`}
+      title={`Weather details for ${userCityDetails.city}, ${userCityDetails.country}`}
       description="Welcome to the Open Meteo Assignment by David Yip"
       SITE_URL={SITE_URL}
       OPEN_METEO_ENDPOINT={OPEN_METEO_ENDPOINT}

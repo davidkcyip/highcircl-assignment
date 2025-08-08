@@ -47,7 +47,7 @@ function WeatherDetails({
 
   return (
     <Layout
-      title={`Temperature details for ${
+      title={`Weather details for ${
         userCityDetails.features?.[0].properties.city ||
         userCityDetails.features?.[0].properties.name ||
         userCityDetails.features?.[0].properties.address_line1
