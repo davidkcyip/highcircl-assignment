@@ -1,8 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+This is an assignment submission for HighCircl consisting of building a webapp using the Open Meteo API.
+
 ## Getting Started
 
-First, run the development server:
+First, register a free account at https://myprojects.geoapify.com/login which is required to run this app. This is required to get city details for each lat/lng which Open Meteo does not provide.
+
+Afterwards, create an `.env` file with the following variable `GEOAPIFY_API_KEY=XXX` where XXX is your Geoapify API key.
+
+Afterwards, run the following command:
 
 ```bash
 npm run dev

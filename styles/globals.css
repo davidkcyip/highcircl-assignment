@@ -5,22 +5,64 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --breakpoint-xs: 30rem;
+  --color-primary: #fceed1;
+  --color-secondary: #d1dffc;
+  --color-tertiary: #9db4ab;
+  --shadow-header: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --shadow-card: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: calc(
+    28px + (48 - 28) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
+}
+
+h2 {
+  font-size: calc(
+    24px + (38 - 24) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
+}
+
+h3 {
+  font-size: calc(
+    18px + (24 - 18) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
+}
+
+h4 {
+  font-size: calc(
+    16px + (18 - 16) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
+}
+
+h5 {
+  font-size: calc(
+    14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
+}
+
+h6 {
+  font-size: calc(
+    12px + (14 - 12) * ((100vw - 320px) / (1600 - 320))
+  ) !important;
 }
